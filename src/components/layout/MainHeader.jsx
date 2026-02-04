@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../../assets/logo/logo-1.png'
+import Logo from '../../assets/logo/Logo-1.png'
 import logoM from '../../assets/logo/O.B..png'
 
 const MainHeader = () => {
