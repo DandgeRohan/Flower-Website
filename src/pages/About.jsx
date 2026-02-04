@@ -1,0 +1,102 @@
+import owner from "../assets/about/Image.png";
+import { one, two, three } from "../assets/gallery/Index";
+const About = () => {
+  return (
+    <section>
+      <header className="text-5xl md:text-5xl font-bold mt-10">
+        <h2>ABOUT</h2>
+      </header>
+      <div className="md:grid grid-cols-12 gap-4 my-20">
+        <aside className="col-span-2">
+          <h3>Our Story</h3>
+        </aside>
+        <div className="col-span-10 space-y-12">
+          <figure className="flex item-start gap-4">
+            <img
+              src={owner}
+              alt="Lilly Smith"
+              fetchPriority="auto"
+              loading="lazy"
+              width={450}
+              height={500}
+            />
+            <figcaption>
+              <h4 className="text-5xl md:text-2xl font-bold">Lilly Smith</h4>
+              <span>owner</span>
+            </figcaption>
+          </figure>
+          <h3 className="text-2xl font-bold">
+            Our Blooms was founded in honor of Lily Smith’s
+            loving aunts, Teresa and Beth.
+          </h3>
+
+          <div className="flex gap-4 ">
+            {[one, two, three].map((item, index) => (
+              <img
+                key={index + 1}
+                src={item}
+                alt={index + 2}
+                fetchPriority="low"
+                loading="lazy"
+                width={200}
+                height={350}
+                className="rounded-2xl aspect-[1/1.2] flex-wrap"
+              />
+            ))}
+          </div>
+
+          <div className="max-w-full md:max-w-[50%] w-full text-sm space-y-4">
+            <p>
+              Lily’s journey with flowers began in the heart
+              of Oregon, amidst the flourishing fields of
+              her aunts' flower farm. It was there,
+              surrounded by the abundance of nature, that
+              she discovered her passion for floral design.
+              From learning the names of each bloom to
+              understanding the delicate balance of a
+              bouquet, she absorbed the artistry of flowers
+              like the rich Oregon soil.
+            </p>
+            <p>
+              Bloom & Co. is the expression of that lifelong
+              passion, a place where her love for flowers
+              translates into beautifully curated
+              arrangements that bring joy and elegance to
+              your spaces.
+            </p>
+          </div>
+
+          <div>
+            <img
+              src={one}
+              alt="one"
+              width={1200}
+              height={400}
+              fetchPriority="low"
+              loading="lazy"
+              className="w-full h-64 object-cover rounded-4xl"
+            />
+          </div>
+
+          <div className="max-w-full md:max-w-[70%] w-full text-sm space-y-4">
+            <p>
+              From humble beginnings, Bloom&Co has grown
+              into a beloved local destination, known for
+              its artistic arrangements, personal service,
+              and commitment to quality.
+            </p>
+            <p>
+              Discover how we can add a touch of natural
+              beauty to your next event.
+            </p>
+            <button className="cursor-pointer px-6 py-2 bg-yellow text-sm font-bold text-black rounded">
+              BOOK A CONSULTATION
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
