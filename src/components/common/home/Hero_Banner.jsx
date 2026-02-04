@@ -1,6 +1,6 @@
 import Logo from '../../../assets/logo/Logo.png'
 import hero_bg from '../../../assets/hero_bg.png'
-import outline from '../../../assets/outline.png'
+import outline from '../../../assets/Outline.png'
 const Hero_Banner = () => {
     return (
         <section className='mt-20 space-y-16'>

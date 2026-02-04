@@ -17,7 +17,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    src: one,
+    src: three,
     heading: "FLORAL INSTALLATIONS",
     description:
       "Living art for homes, businesses, and events.",
