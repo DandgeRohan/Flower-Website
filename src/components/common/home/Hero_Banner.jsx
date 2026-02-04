@@ -1,4 +1,4 @@
-import Logo from '../../../assets/logo/logo.png'
+import Logo from '../../../assets/logo/Logo.png'
 import hero_bg from '../../../assets/hero_bg.png'
 import outline from '../../../assets/outline.png'
 const Hero_Banner = () => {
