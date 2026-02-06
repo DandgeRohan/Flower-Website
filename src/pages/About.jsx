@@ -8,10 +8,10 @@ const About = () => {
       </header>
       <div className="md:grid grid-cols-12 gap-4 my-20">
         <aside className="col-span-2">
-          <h3>Our Story</h3>
+          <h3 className="text-text my-2">Our Story</h3>
         </aside>
         <div className="col-span-10 space-y-12">
-          <figure className="flex item-start gap-4">
+          <figure className="flex item-start gap-4 flex-wrap">
             <img
               src={owner}
               alt="Lilly Smith"
@@ -30,7 +30,7 @@ const About = () => {
             loving aunts, Teresa and Beth.
           </h3>
 
-          <div className="flex gap-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
             {[one, two, three].map((item, index) => (
               <img
                 key={index + 1}
@@ -38,14 +38,14 @@ const About = () => {
                 alt={index + 2}
                 fetchPriority="low"
                 loading="lazy"
-                width={200}
+                width={280}
                 height={350}
-                className="rounded-2xl aspect-[1/1.2] flex-wrap"
+                className="rounded-2xl col-span-1 w-full aspect-[1/1.2]"
               />
             ))}
           </div>
 
-          <div className="max-w-full md:max-w-[50%] w-full text-sm space-y-4">
+          <div className="max-w-full md:max-w-[50%] w-full text-sm space-y-4 text-para">
             <p>
               Lily’s journey with flowers began in the heart
               of Oregon, amidst the flourishing fields of
@@ -78,7 +78,7 @@ const About = () => {
             />
           </div>
 
-          <div className="max-w-full md:max-w-[70%] w-full text-sm space-y-4">
+          <div className="max-w-full md:max-w-[70%] w-full text-sm space-y-4 text-para">
             <p>
               From humble beginnings, Bloom&Co has grown
               into a beloved local destination, known for
